@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-16A34A.svg)](LICENSE)
 [![Security Policy](https://img.shields.io/badge/security-policy-0F766E.svg)](SECURITY.md)
-[![Validate Content](https://github.com/webdzion/ai-supply-chain-audit/actions/workflows/validate-markdown.yml/badge.svg)](https://github.com/webdzion/ai-supply-chain-audit/actions/workflows/validate-markdown.yml)
+[![Validate Content](https://github.com/leoziondev/ai-supply-chain-audit/actions/workflows/validate-markdown.yml/badge.svg)](https://github.com/leoziondev/ai-supply-chain-audit/actions/workflows/validate-markdown.yml)
 [![Agent Ready](https://img.shields.io/badge/agent--ready-Codex%20%7C%20Claude%20%7C%20Cursor%20%7C%20OpenCode-2563EB.svg)](DISTRIBUTION.md)
 [![Audit Only](https://img.shields.io/badge/default-audit--only-7C3AED.svg)](skills/supply-chain-audit/references/no-project-mutation.md)
 [![LGPD Aware](https://img.shields.io/badge/LGPD-aware-0891B2.svg)](checklists/data-breach-lgpd.md)
