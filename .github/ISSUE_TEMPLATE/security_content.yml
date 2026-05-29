@@ -1,0 +1,35 @@
+name: Security content issue
+description: Reporte conteudo perigoso, incorreto ou ambiguo no toolkit.
+title: "security-content: "
+labels: ["security-content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nao reporte vulnerabilidades reais de terceiros por issue publica. Use este template apenas para problemas no conteudo deste repositorio.
+  - type: textarea
+    id: issue
+    attributes:
+      label: Conteudo de risco
+      description: Qual trecho pode induzir uso inseguro, conclusao incorreta ou exposicao de dados?
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Local
+      placeholder: examples/nodejs-example.md:120
+    validations:
+      required: true
+  - type: textarea
+    id: safer
+    attributes:
+      label: Sugestao defensiva
+      description: Como o conteudo deveria ser reescrito?
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmacao
+      options:
+        - label: Este reporte nao contem dados reais de incidente, secrets ou amostras de vazamento.
+          required: true

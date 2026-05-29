@@ -1,0 +1,20 @@
+---
+description: Audit supply chain, CI/CD, framework, SaaS and data breach risks without modifying the project by default.
+globs: ""
+alwaysApply: false
+---
+
+# Supply Chain Audit Rule
+
+Use this rule only when intentionally auditing security risk. Prefer global User Rules for recurring use; add this Project Rule only when the team wants it versioned.
+
+Default mode is audit-only:
+
+- Read files and logs.
+- Do not create reports or helper files in the project by default.
+- Do not edit code, workflows, lockfiles or configs unless explicitly requested.
+- Do not run `npm install`, `pnpm install`, `yarn install`, `composer install`, builds, migrations or deploys before triage.
+- Do not download dumps, leaked personal data or criminal-forum material.
+- Classify evidence before saying compromise or breach is confirmed.
+
+Findings must include severity, evidence, impact, IOC, MITRE ATT&CK when applicable, exploitability and correction.

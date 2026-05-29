@@ -1,0 +1,36 @@
+name: Checklist or example request
+description: Sugira novo checklist, exemplo, adapter ou caso de uso defensivo.
+title: "request: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo
+      options:
+        - Checklist
+        - Exemplo
+        - Template
+        - Adapter
+        - Prompt improvement
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Cenario
+      description: Qual stack, incidente ou fluxo defensivo deve ser coberto?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencia ou referencia publica
+      description: Inclua links publicos confiaveis quando houver. Nao inclua dumps ou dados pessoais.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Resultado esperado
+      description: Que decisao ou validacao o toolkit deve ajudar a produzir?
+    validations:
+      required: true

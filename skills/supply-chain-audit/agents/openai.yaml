@@ -1,0 +1,3 @@
+display_name: Supply Chain Audit
+short_description: Audit supply chain, CI/CD, framework, SaaS and data breach risks without modifying target projects.
+default_prompt: Audit this project for supply chain, CI/CD, framework, SaaS and data breach risks using evidence-first findings.

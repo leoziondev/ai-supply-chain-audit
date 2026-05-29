@@ -1,0 +1,36 @@
+name: Bug report
+description: Reporte um problema em documentacao, prompt, adapter, skill ou template.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Nao inclua secrets, dados pessoais reais, dumps ou informacoes de terceiros sem autorizacao.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Descreva o problema observado.
+      placeholder: O checklist X orienta Y, mas isso pode causar Z.
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Arquivo afetado
+      placeholder: prompts/supply-chain-security-audit.md
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: Explique o resultado correto.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Seguranca do reporte
+      options:
+        - label: Nao inclui secrets, dados pessoais reais, dumps ou payloads ofensivos.
+          required: true
